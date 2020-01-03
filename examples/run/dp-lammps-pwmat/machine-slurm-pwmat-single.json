@@ -1,0 +1,80 @@
+{
+  "train": [
+    {
+      "machine": {
+        "machine_type": "slurm",
+        "hostname": "mstation",
+        "port": 22,
+        "username": "tianhongzhen",
+        "password": "",
+        "work_path": "/home/tianhongzhen/software/dpgen/examples/run/dp-lammps-pwmat/md/test/dpgen/test/workspace"
+      },
+      "resources": {
+        "numb_node": 1,
+        "numb_gpu": 4,
+        "task_per_node": 4,
+        "partition": "control",
+        "exclude_list": [],
+        "source_list": [
+          "/home/tianhongzhen/software/dpgen/examples/run/dp-lammps-pwmat/md/test/dpgen/test/train.env"
+        ],
+        "module_list": [],
+        "time_limit": "23:0:0"
+      },
+      "deepmd_path" : "/home/tianhongzhen/software/deepmd-kit-0.12.8"
+    }
+  ],
+  "model_devi": [
+    {
+      "machine": {
+        "machine_type": "slurm",
+        "hostname": "mstation",
+        "port": 22,
+        "username": "tianhongzhen",
+        "password": "",
+        "work_path": "/home/tianhongzhen/software/dpgen/examples/run/dp-lammps-pwmat/md/test/dpgen/test/work_model"
+      },
+      "resources": {
+        "numb_node": 1,
+        "numb_gpu": 4,
+        "task_per_node": 4,
+        "partition": "control",
+        "exclude_list": [],
+        "source_list": [
+          "/home/tianhongzhen/software/dpgen/examples/run/dp-lammps-pwmat/md/test/dpgen/test/train.env"
+        ],
+        "module_list": [],
+        "time_limit": "23:0:0"
+      },
+      "command": "srun --mpi=pmi2 lmp_mpi",
+      "group_size": 10
+    }
+  ],
+  "fp": [
+    {
+      "machine": {
+        "machine_type": "slurm",
+        "hostname": "mstation",
+        "port": 22,
+        "username": "tianhongzhen",
+        "password": "",
+        "work_path": "/home/tianhongzhen/software/dpgen/examples/run/dp-lammps-pwmat/md/test/dpgen/test/work_fp"
+      },
+      "resources": {
+        "task_per_node": 4,
+        "numb_gpu": 4,
+        "exclude_list": [],
+        "with_mpi": false,
+        "source_list": [],
+        "module_list": [
+          "cuda/8.0"
+        ],
+        "time_limit": "120:0:0",
+        "partition": "control",
+        "_comment": "that's All"
+      },
+      "command": "mpirun -np 4 PWmat",
+      "group_size": 5
+    }
+  ]
+}
