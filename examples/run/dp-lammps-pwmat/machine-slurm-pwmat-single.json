@@ -5,9 +5,9 @@
         "machine_type": "slurm",
         "hostname": "mstation",
         "port": 22,
-        "username": "tianhongzhen",
-        "password": "",
-        "work_path": "/home/tianhongzhen/software/dpgen/examples/run/dp-lammps-pwmat/md/test/dpgen/test/workspace"
+        "username": "test",
+        "password": "PWmat2019",
+        "work_path": "/home/test/software/dpgen/examples/run/dp-lammps-pwmat/work_train"
       },
       "resources": {
         "numb_node": 1,
@@ -16,12 +16,12 @@
         "partition": "control",
         "exclude_list": [],
         "source_list": [
-          "/home/tianhongzhen/software/dpgen/examples/run/dp-lammps-pwmat/md/test/dpgen/test/train.env"
+          "/home/test/software/dpgen/examples/run/dp-lammps-pwmat/train.env"
         ],
         "module_list": [],
         "time_limit": "23:0:0"
       },
-      "deepmd_path" : "/home/tianhongzhen/software/deepmd-kit-0.12.8"
+      "deepmd_path" : "/home/test/anaconda2/envs/python3/"
     }
   ],
   "model_devi": [
@@ -30,9 +30,9 @@
         "machine_type": "slurm",
         "hostname": "mstation",
         "port": 22,
-        "username": "tianhongzhen",
-        "password": "",
-        "work_path": "/home/tianhongzhen/software/dpgen/examples/run/dp-lammps-pwmat/md/test/dpgen/test/work_model"
+        "username": "test",
+        "password": "PWmat2019",
+        "work_path": "/home/test/software/dpgen/examples/run/dp-lammps-pwmat/work_model"
       },
       "resources": {
         "numb_node": 1,
@@ -41,7 +41,7 @@
         "partition": "control",
         "exclude_list": [],
         "source_list": [
-          "/home/tianhongzhen/software/dpgen/examples/run/dp-lammps-pwmat/md/test/dpgen/test/train.env"
+          "/home/test/software/dpgen/examples/run/dp-lammps-pwmat/train.env"
         ],
         "module_list": [],
         "time_limit": "23:0:0"
@@ -56,9 +56,9 @@
         "machine_type": "slurm",
         "hostname": "mstation",
         "port": 22,
-        "username": "tianhongzhen",
-        "password": "",
-        "work_path": "/home/tianhongzhen/software/dpgen/examples/run/dp-lammps-pwmat/md/test/dpgen/test/work_fp"
+        "username": "test",
+        "password": "PWmat2019",
+        "work_path": "/home/test/software/dpgen/examples/run/dp-lammps-pwmat/work_fp"
       },
       "resources": {
         "task_per_node": 4,

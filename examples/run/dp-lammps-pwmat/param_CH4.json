@@ -2,7 +2,7 @@
     "type_map":		["H","C"],
     "mass_map":		[1, 12],
 
-    "init_data_prefix":	"/home/tianhongzhen/software/dpgen/examples/run/dp-lammps-pwmat/md/test/dpgen/test",
+    "init_data_prefix":	"/home/test/software/dpgen/examples/run/dp-lammps-pwmat/",
 
     "init_data_sys":	[
 	"ch4/00.data"
@@ -11,10 +11,10 @@
 	8
 			],
     "sys_configs_prefix":
-    "/home/tianhongzhen/software/dpgen/examples/run/dp-lammps-pwmat/md/test/dpgen/test",
+    "/home/test/software/dpgen/examples/run/dp-lammps-pwmat/",
     "sys_configs":	[
-    ["/home/tianhongzhen/software/dpgen/examples/run/dp-lammps-pwmat/md/test/dpgen/test/scale-1.000/00000*/POSCAR"],
-    ["/home/tianhongzhen/software/dpgen/examples/run/dp-lammps-pwmat/md/test/dpgen/test/scale-1.000/00001*/POSCAR"]
+    ["/home/test/software/dpgen/examples/run/dp-lammps-pwmat/scale-1.000/00000*/POSCAR"],
+    ["/home/test/software/dpgen/examples/run/dp-lammps-pwmat/scale-1.000/00001*/POSCAR"]
 	],
     
     "sys_batch_size":	[
@@ -91,7 +91,7 @@
     "fp_style":		"pwmat",
     "shuffle_poscar":	false,
     "fp_task_max":	20,
-    "fp_task_min":	5,
+    "fp_task_min":	8,
     "fp_pp_path":	".",
     "fp_pp_files":	["C.SG15.PBE.UPF", "H.SG15.PBE.UPF"],
     "fp_incar" : "etot.input",  
